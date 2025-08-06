@@ -97,10 +97,11 @@ def save_model(model, file_path: str) -> None:
 def main():
     try:
         params=load_params('params.yaml')['model_building']
-        params={'n_estimators':25 , 'random_state': 2}
+        #params={'n_estimators':25 , 'random_state': 2}
         train_data=load_data('./data/processed/train_tfidf.csv')
         X_train=train_data.iloc[:, :-1].values
         y_train=train_data.iloc[:, -1].values
+
         clf=train_model(X_train, y_train, params)
 
         model_save_path='models/model.pkl'
