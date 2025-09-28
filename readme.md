@@ -25,7 +25,7 @@ Primary goals:
 - Automated tests (optional) to validate pipeline components
 
 ## 📂Repo structure
-
+```
 Email-Spam-Classification/
 │-- src/
 │   ├── data_ingestion.py        # Read external data sources / load raw data
