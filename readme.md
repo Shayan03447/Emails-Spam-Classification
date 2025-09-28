@@ -26,24 +26,17 @@ Primary goals:
 
 ## 📂Repo structure
 
-"""
-
 Email-Spam-Classification/
 │-- src/
-│   ├── ingestion/
-│   │   └── ingest.py            # Read external data sources / load raw data
-│   ├── preprocessing/
-│   │   └── preprocess.py        # Cleaning, text normalization, tokenization
-│   ├── features/
-│   │   └── build_features.py    # Vectorization (TF-IDF), embeddings,
-│   ├── training/
-│   │   └── train.py             # Model training & save model (joblib/pickles)
-│   ├── evaluation/
-│   │   └── evaluate.py          # Metrics, confusion matrix, ROC, PR curves
-│   
+│   ├── data_ingestion.py        # Read external data sources / load raw data
+│   ├── preprocessing.py         # Cleaning, text normalization, tokenization
+│   ├── features.py              # Vectorization (TF-IDF, embeddings, etc.)
+│   ├── training.py              # Model training & save model (joblib/pickle)
+│   ├── evaluation.py            # Metrics, confusion matrix, ROC, PR curves
+│                 
 │
 │-- notebooks/
-│   └── 03_experiments.ipynb     # Experiment walkthroughs
+│   └── spam_classification.ipynb   # EDA + Clearance + Experiments
 │
 │-- data/                        # (gitignored) raw and intermediate datasets
 │-- models/                      # (gitignored) saved model artifacts
@@ -54,7 +47,8 @@ Email-Spam-Classification/
 │-- .gitignore
 │-- requirements.txt
 │-- README.md
-"""
+```
+
 
 ## ▶️ How to run the pipeline (reproducible)
 
