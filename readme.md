@@ -26,6 +26,8 @@ Primary goals:
 
 ## 📂Repo structure
 
+"""
+
 Email-Spam-Classification/
 │-- src/
 │   ├── ingestion/
@@ -52,6 +54,7 @@ Email-Spam-Classification/
 │-- .gitignore
 │-- requirements.txt
 │-- README.md
+"""
 
 ## ▶️ How to run the pipeline (reproducible)
 
